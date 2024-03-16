@@ -4,6 +4,8 @@ import { GoogleMap, useLoadScript, MarkerF, InfoWindowF } from '@react-google-ma
 import Home from './Home';
 import Header from './Header';
 import Footer from './Footer';
+import Login from './Login';
+import Signup from './Signup';
 
 const markers = [
   {
@@ -174,6 +176,8 @@ function App() {
       </Fragment>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       <Footer />
     </Router>
